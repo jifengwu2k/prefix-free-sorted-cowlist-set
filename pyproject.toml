@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prefix-free-sorted-cowlist-set"
+version = "0.1.0a1"
+description = "A Python implementation of a prefix-free, sorted set of COWList, backed by a trie data structure for efficient prefix checking and maintenance of sorted order."
+readme = "README.md"
+requires-python = ">=2"
+license = "MIT"
+authors = [
+  { name="Jifeng Wu", email="jifengwu2k@gmail.com" }
+]
+classifiers = [
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "cowlist",
+    "put-back-iterator",
+    "sortedcontainers",
+    "typing; python_version < '3.5'"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/jifengwu2k/prefix-free-sorted-cowlist-set"
+"Bug Tracker" = "https://github.com/jifengwu2k/prefix-free-sorted-cowlist-set/issues"
